@@ -44,12 +44,12 @@ avengers = Ticket("avengers", 15, 30)
 
 me = User("giorgi", 250 - avengers.quantity - titanic.quantity)
 
+me.buy_ticket(titanic, 2)
+me.buy_ticket(avengers, 5)
+
 print(titanic)
 print(avengers)
 print(me)
-
-me.buy_ticket(titanic, 2)
-me.buy_ticket(avengers, 5)
 
 print(titanic > avengers)
 print(titanic > 10)
